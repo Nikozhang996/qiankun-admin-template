@@ -1,17 +1,17 @@
 <template>
-  <div>{{a}}</div>
+  <div id="root">
+    <el-select v-model="a">
+      <el-option label="A" value="1"></el-option>
+    </el-select>
+  </div>
 </template>
 
 <script>
 export default {
-data(){
-return {
-    a:1
-}
-}
+  data() {
+    return {
+      a: 100
+    }
+  }
 }
 </script>
-
-<style>
-
-</style>

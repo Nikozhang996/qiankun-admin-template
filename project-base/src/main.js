@@ -1,16 +1,21 @@
 import Vue from "vue";
+import router from './router'
+import store from './store'
 import ElementUI from "element-ui";
-
 import App from './App.vue'
 
+
 Vue.use(ElementUI, {
-  size: "mini",
+    size: "mini",
 });
 
 Vue.config.productionTip = false;
 
 export default new Vue({
-  render: (h) => h(App),
-}).$mount("#root");
+    el: '#root',
+    router,
+    store,
+    render: (h) => h(App),
+})
 
 
