@@ -3,7 +3,7 @@
     <app-header />
     <div class="home-content">
       <div class="home-view">
-        <h1 class="title">欢迎使用快乐种子后台管理系统</h1>
+        <h1 class="title">欢迎使用千聊后台管理系统</h1>
       </div>
     </div>
   </div>
