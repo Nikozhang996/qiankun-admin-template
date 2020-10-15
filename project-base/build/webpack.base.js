@@ -22,11 +22,12 @@ module.exports = function(env) {
       path: path.resolve(__dirname, "../dist"),
     },
     resolve: {
-      extensions: [".js", ".json", "ts"],
+      extensions: [".js", ".json", "vue"],
+      alias:{
+        '@': path.resolve(__dirname, "../src"),
+      }
     },
-    externals: {
-      jquery: "$",
-    },
+    externals: {},
     module: {
       rules: [
         {
@@ -135,7 +136,7 @@ module.exports = function(env) {
       new VueLoaderPlugin(),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "../public/index.html"),
-        title: "hello webpack",
+        title: "千聊后台管理系统",
         filename: "index.html",
         minify: isProduction && {
           removeAttributeQuotes: true,
